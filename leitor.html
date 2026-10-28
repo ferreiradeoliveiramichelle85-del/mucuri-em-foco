@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mucuri em Foco — Leitor do jornal</title>
+  <link rel="stylesheet" href="assets/css/leitor.css?v=4">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div id="leitor-container">
+  <div id="toolbar">
+    <div class="left">
+      <div class="brand-mini"><img src="assets/img/logo-escola.jpeg" alt="Escola Estadual de Mucuri"><span><strong>Mucuri em Foco</strong><small>Escola Estadual de Mucuri</small></span></div>
+      <span class="edition-info" id="edition-info">Carregando edição...</span>
+    </div>
+    <div class="center">
+      <button id="btn-zoom-in" title="Aumentar zoom" aria-label="Aumentar zoom"><i class="fas fa-search-plus"></i></button>
+      <button id="btn-zoom-out" title="Diminuir zoom" aria-label="Diminuir zoom"><i class="fas fa-search-minus"></i></button>
+      <button id="btn-dark-mode" title="Modo escuro" aria-label="Alternar modo escuro"><i class="fas fa-moon"></i></button>
+      <button id="btn-sumario" title="Sumário" aria-label="Abrir sumário"><i class="fas fa-list-ul"></i></button>
+      <span id="page-indicator">Página <span id="current-page">1</span> / <span id="total-pages">1</span></span>
+    </div>
+    <div class="right"><button id="btn-fechar" title="Voltar" aria-label="Voltar"><i class="fas fa-times"></i></button></div>
+  </div>
+  <div id="reader-stage">
+    <button id="prev-page" class="reader-arrow" title="Página anterior" aria-label="Página anterior"><i class="fas fa-chevron-left"></i></button>
+    <div id="flipbook"></div>
+    <button id="next-page" class="reader-arrow" title="Próxima página" aria-label="Próxima página"><i class="fas fa-chevron-right"></i></button>
+  </div>
+  <div id="sumario-panel"><div class="sumario-header"><h3>Sumário</h3><button id="btn-fechar-sumario" title="Fechar" aria-label="Fechar sumário"><i class="fas fa-times"></i></button></div><ul id="sumario-list"></ul></div>
+  <div id="reader-error" style="display:none;text-align:center;padding:30px;color:white">Não foi possível abrir esta edição. Volte à página inicial e tente novamente.</div>
+</div>
+<script src="assets/js/leitor-estatico.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+    "edicoes": [
+        {
+            "id": 1,
+            "numero": 1,
+            "data": "2026-09-24",
+            "capa": "capas/edicao-1.png",
+            "totalPaginas": 5,
+            "sumario": [
+                {
+                    "titulo": "Tecnologia e Educação",
+                    "pagina": 2
+                },
+                {
+                    "titulo": "Cultura",
+                    "pagina": 3
+                },
+                {
+                    "titulo": "Comunidade",
+                    "pagina": 4
+                },
+                {
+                    "titulo": "Dicas",
+                    "pagina": 5
+                }
+            ]
+        }
+    ]
+}
